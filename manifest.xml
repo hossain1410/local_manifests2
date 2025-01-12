@@ -1,26 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
         <remote name="hossain"
-		fetch="https://github.com/hossain1410"
-		revision="lineage-20"/>
+		fetch="https://github.com/hossain1410"/>
 	<remote name="slsi-linaro"
 		fetch="https://github.com/8890q"
-		revision="lineage-20.0"/>
+		revision="lineage-19.1"/>
         <remote name="8890q"
                 fetch="https://github.com/8890q"/>
-        
+        <remote name="lineage-cp"
+                fetch="https://github.com/LineageOS"
+		revision="lineage-20"/>
 
-        <!-- Eureka -->
-        <project path="device/samsung" name="android_device_samsung_greatlte" remote="hossain"/>
+        <!-- 8890q DT -->
+        <project path="device/samsung" name="android_device_samsung_greatlte" remote="hossain" revision="lineage-20.0"/>
         <project path="kernel/samsung/universal8895" name="android_kernel_samsung_universal8895" remote="8890q" revision="lineage-20.0" />
-        <project path="vendor/samsung" name="android_vendor_samsung_exynos7885" remote="eureka"/>
+        <project path="vendor/samsung" name="proprietary_vendor_samsung_exynos7885" remote="8890q" revision="lineage-20.0" />
 
+	<!-- DT -->
         
+	<project path="device/samsung/universal8895-common" name="android_device_samsung_universal8895-common" remote="hossain" revision="lineage-20.0" />
+        
+        
+
+	
+	
         <!-- Royna's forks and repos -->
         <project path="device/samsung_slsi/sepolicy" name="android_device_samsung_slsi_sepolicy" remote="8890q"/>
         
         <project path="hardware/samsung" name="android_hardware_samsung" remote="8890q" revision="lineage-20.0"/>
 
+	<!-- LineageOS -->
+        <project path="hardware/samsung_slsi/libbt"
+                 name="android_hardware_samsung_slsi_libbt"
+                 remote="lineage-cp"/>
+        <project path="hardware/samsung_slsi/scsc_wifibt/wifi_hal"
+                 name="android_hardware_samsung_slsi_scsc_wifibt_wifi_hal"
+                 remote="lineage-cp" />
+        <project path="hardware/samsung_slsi/scsc_wifibt/wpa_supplicant_lib"
+                 name="android_hardware_samsung_slsi_scsc_wifibt_wpa_supplicant_lib"
+                 remote="lineage-cp" />
         <!-- SLSI Linaro -->
 	<project path="hardware/samsung_slsi-linaro/graphics"
                  name="android_hardware_samsung_slsi-linaro_graphics" remote="slsi-linaro" />
