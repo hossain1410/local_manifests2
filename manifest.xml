@@ -27,7 +27,7 @@
         <!-- Royna's forks and repos -->
         <project path="device/samsung_slsi/sepolicy" name="android_device_samsung_slsi_sepolicy" remote="8890q" revision="lineage-19.1"/>
         
-        <project path="hardware/samsung" name="android_hardware_samsung" remote="8890q" revision="lineage-20.0"/>
+        <project path="hardware/samsung" name="android_hardware_samsung" remote="8890q" revision="lineage-19.1"/>
 
 	<!-- LineageOS -->
         <project path="hardware/samsung_slsi/libbt"
@@ -42,8 +42,6 @@
         <!-- SLSI Linaro -->
 	<project path="hardware/samsung_slsi-linaro/graphics"
                  name="android_hardware_samsung_slsi-linaro_graphics" remote="slsi-linaro" />
-	<project path="hardware/samsung_slsi-linaro/interfaces"
-                 name="android_hardware_samsung_slsi-linaro_interfaces" remote="slsi-linaro" />
         <project path="hardware/samsung_slsi-linaro/exynos"
                  name="android_hardware_samsung_slsi-linaro_exynos" remote="slsi-linaro" />
         <project path="hardware/samsung_slsi-linaro/config"
