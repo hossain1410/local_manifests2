@@ -3,22 +3,18 @@
         <remote name="hossain"
 		fetch="https://github.com/hossain1410"/>
 	<remote name="slsi-linaro"
-		fetch="https://github.com/8890q"
-		revision="lineage-19.1"/>
+		fetch="https://github.com/8890q"/>
         <remote name="8890q"
                 fetch="https://github.com/8890q"/>
-        <remote name="lineage-cp"
-                fetch="https://github.com/LineageOS"
-		revision="lineage-20"/>
-
+        
         <!-- 8890q DT -->
-        <project path="device/samsung" name="android_device_samsung_greatlte" remote="hossain" revision="lineage-20.0"/>
-        <project path="kernel/samsung/universal8895" name="android_kernel_samsung_universal8895" remote="8890q" revision="lineage-20.0" />
-	<project path="vendor/samsung" name="android_vendor_samsung" remote="8890q" revision="lineage-20.0" />
+        <project path="device/samsung/greatlte" name="android_device_samsung_greatlte" remote="hossain" revision="lineage-19.1"/>
+        <project path="kernel/samsung/universal8895" name="android_kernel_samsung_universal8895" remote="8890q" revision="lineage-19.1" />
+	<project path="vendor/samsung" name="android_vendor_samsung" remote="hossain" revision="lineage-19.1" />
         
 	<!-- DT -->
         
-	<project path="device/samsung/universal8895-common" name="android_device_samsung_universal8895-common" remote="hossain" revision="lineage-20.0" />
+	<project path="device/samsung/universal8895-common" name="android_device_samsung_universal8895-common" remote="hossain" revision="lineage-19.1" />
         
         
 
@@ -29,23 +25,14 @@
         
         <project path="hardware/samsung" name="android_hardware_samsung" remote="8890q" revision="lineage-19.1"/>
 
-	<!-- LineageOS -->
-        <project path="hardware/samsung_slsi/libbt"
-                 name="android_hardware_samsung_slsi_libbt"
-                 remote="lineage-cp"/>
-        <project path="hardware/samsung_slsi/scsc_wifibt/wifi_hal"
-                 name="android_hardware_samsung_slsi_scsc_wifibt_wifi_hal"
-                 remote="lineage-cp" />
-        <project path="hardware/samsung_slsi/scsc_wifibt/wpa_supplicant_lib"
-                 name="android_hardware_samsung_slsi_scsc_wifibt_wpa_supplicant_lib"
-                 remote="lineage-cp" />
+	
         <!-- SLSI Linaro -->
 	<project path="hardware/samsung_slsi-linaro/graphics"
-                 name="android_hardware_samsung_slsi-linaro_graphics" remote="slsi-linaro" />
+                 name="android_hardware_samsung_slsi-linaro_graphics" remote="slsi-linaro" revision="lineage-19.1"/>
         <project path="hardware/samsung_slsi-linaro/exynos"
-                 name="android_hardware_samsung_slsi-linaro_exynos" remote="slsi-linaro" />
+                 name="android_hardware_samsung_slsi-linaro_exynos" remote="slsi-linaro" revision="lineage-19.1" />
         <project path="hardware/samsung_slsi-linaro/config"
-                 name="android_hardware_samsung_slsi-linaro_config" remote="slsi-linaro" />
+                 name="android_hardware_samsung_slsi-linaro_config" remote="slsi-linaro" revision="lineage-19.1" />
         <project path="hardware/samsung_slsi-linaro/openmax"
-                 name="android_hardware_samsung_slsi-linaro_openmax" remote="slsi-linaro" />
+                 name="android_hardware_samsung_slsi-linaro_openmax" remote="slsi-linaro" revision="lineage-19.1" />
 </manifest>
